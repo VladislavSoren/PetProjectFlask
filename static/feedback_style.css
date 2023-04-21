@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+
+h2 {
+    color: black;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+label {
+    color: black;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+b {
+    color: gray;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin-left: 15px;
+}

@@ -60,4 +60,4 @@ def feedback():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='10.100.100.200', port='5666')

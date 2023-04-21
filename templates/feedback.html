@@ -1,30 +1,30 @@
- support.html
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html >
   <head>
     <meta charset="utf-8">
     <title>
-         Add skills and salary
+         Best service
     </title>
+     <link rel="stylesheet" href='/static/feedback_style.css'/>
   </head>
   <body>
       <h1>
         Add skills and salary
       </h1>
-      <a href="/">Find out the salary</a>
-      <br>
-      <br>
-      <br>
-      Enter your skill stack used at work
-      <br>
-      <br>
-      <br>
-      Example:     python sql pandas numpy seaborn spacy tensorflow keras pycharm scikit-learn linear-regressions
-      <br>
+      <h2>
+          <a href="/">Find out the salary</a>
+          <br>
+          <br>
+          Enter your skill stack used at work<br>
+      </h2>
+
+      <b>Example:     python sql pandas numpy seaborn spacy tensorflow keras pycharm scikit-learn linear-regressions</b><br>
       <br>
           <form action="/feedback" method="post">
-            <input type="text" name="skill" placeholder="Your skills"/>
-            <input type="text" name="salary" placeholder="Your salary"/>
+            <label>Enter Your skills</label>
+            <input type="text" name="skill"/><br>
+            <label>Enter Your salary</label>
+            <input type="text" name="salary"/><br>
             <button type="submit">Send</button>
           </form>
   </body>

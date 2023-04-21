@@ -5,42 +5,48 @@
     <title>
          Best service
     </title>
-  </head>
-  <body>
+<!--  Load CSS in Flask with html-->
+    <link rel="stylesheet" href='/static/main.css'/>
+
+</head>
+<body>
       <h1>
           Salary assessment service in DS
       </h1>
-      <a href="/feedback">Add skills and salary</a>
-      <p><b>Choose Your Skills!</b></p>
+      <h2>
+          <a href="/feedback">Add skills and salary</a><Br>
+          <Br>
+          <b>Choose Your Skills!</b>
+      </h2>
 
-<form method="post">
-   <input type="checkbox" name="mycheck" value="python"     >python<Br>
-   <input type="checkbox" name="mycheck" value="sql"        >sql<Br>
-   <input type="checkbox" name="mycheck" value="apache"     >apache<Br>
-   <input type="checkbox" name="mycheck" value="catboost"   >catboost<Br>
-   <input type="checkbox" name="mycheck" value="clickhouse" >clickhouse<Br>
-   <input type="checkbox" name="mycheck" value="cv"         >cv<Br>
-   <input type="checkbox" name="mycheck" value="docker"     >docker<Br>
-   <input type="checkbox" name="mycheck" value="flask"      >flask<Br>
-   <input type="checkbox" name="mycheck" value="git"        >git<Br>
-   <input type="checkbox" name="mycheck" value="github"     >github<Br>
-   <input type="checkbox" name="mycheck" value="linux"      >linux<Br>
-   <input type="checkbox" name="mycheck" value="golang"     >golang<Br>
-   <input type="checkbox" name="mycheck" value="hadoop"     >hadoop<Br>
-   <input type="checkbox" name="mycheck" value="html"       >html<Br>
-   <input type="checkbox" name="mycheck" value="django"     >django<Br>
-   <input type="checkbox" name="mycheck" value="jupyter notebook" >jupyter notebook<Br>
-   <input type="checkbox" name="mycheck" value="keras"      >keras<Br>
-   <input type="checkbox" name="mycheck" value="matplotlib" >matplotlib<Br>
-   <input type="checkbox" name="mycheck" value="numpy"      >numpy<Br>
-   <input type="checkbox" name="mycheck" value="scikit-learn" >scikit-learn<Br>
-   <input type="checkbox" name="mycheck" value="tensorflow"  >tensorflow<Br>
-   <input type="checkbox" name="mycheck" value="transformers">transformers<Br>
+    <b><form style="max-width: 500%;"  id="form_login" method="post">
+       <input type="checkbox" name="mycheck" value="python"     > python<Br>
+       <input type="checkbox" name="mycheck" value="sql"        > sql<Br>
+       <input type="checkbox" name="mycheck" value="apache"     > apache<Br>
+       <input type="checkbox" name="mycheck" value="catboost"   > catboost<Br>
+       <input type="checkbox" name="mycheck" value="clickhouse" > clickhouse<Br>
+       <input type="checkbox" name="mycheck" value="cv"         > cv<Br>
+       <input type="checkbox" name="mycheck" value="docker"     > docker<Br>
+       <input type="checkbox" name="mycheck" value="flask"      > flask<Br>
+       <input type="checkbox" name="mycheck" value="git"        > git<Br>
+       <input type="checkbox" name="mycheck" value="github"     > github<Br>
+       <input type="checkbox" name="mycheck" value="linux"      > linux<Br>
+       <input type="checkbox" name="mycheck" value="golang"     > golang<Br>
+       <input type="checkbox" name="mycheck" value="hadoop"     > hadoop<Br>
+       <input type="checkbox" name="mycheck" value="html"       > html<Br>
+       <input type="checkbox" name="mycheck" value="django"     > django<Br>
+       <input type="checkbox" name="mycheck" value="jupyter notebook" > jupyter notebook<Br>
+       <input type="checkbox" name="mycheck" value="keras"      > keras<Br>
+       <input type="checkbox" name="mycheck" value="matplotlib" > matplotlib<Br>
+       <input type="checkbox" name="mycheck" value="numpy"      > numpy<Br>
+       <input type="checkbox" name="mycheck" value="scikit-learn" > scikit-learn<Br>
+       <input type="checkbox" name="mycheck" value="tensorflow"  > tensorflow<Br>
+       <input type="checkbox" name="mycheck" value="transformers"> transformers<Br><Br>
+    <button type="submit">Get salary</button><Br>
+    <h2>Salary is {{ salary }}</h2>
 
-   <button type="submit">Get salary</button>
+    </form></b>
 
-Salary is {{ salary }}
-   </form>
-
-  </body>
+</body>
 </html>
+
