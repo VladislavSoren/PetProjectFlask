@@ -6,20 +6,33 @@
          Best service
     </title>
 <!--  Load CSS in Flask with html-->
+    <link rel="icon"
+      type="image/ico"
+      href="static/favicon.ico">
     <link rel="stylesheet" href='/static/main.css'/>
 
 </head>
 <body>
+      <div id="left">
       <h1>
           Salary assessment service in DS
       </h1>
+      <h2 style='font-size: 20px; text-align: right; color: black;'>
+            <a href=https://t.me/VladislavSoren style="color: #0d0aab">by FriendlyDev</a>
+      </h2>
       <h2>
           <a href="/feedback">Add skills and salary</a><Br>
           <Br>
           <b>Choose Your Skills!</b>
       </h2>
+    </div>
 
+    <div class="wrapper">
     <b><form style="max-width: 500%;"  id="form_login" method="post">
+
+        <h2>Salary is {{ salary }}</h2>
+
+       <div class="left_block">
        <input type="checkbox" name="mycheck" value="python"     > python<Br>
        <input type="checkbox" name="mycheck" value="sql"        > sql<Br>
        <input type="checkbox" name="mycheck" value="apache"     > apache<Br>
@@ -42,10 +55,15 @@
        <input type="checkbox" name="mycheck" value="scikit-learn" > scikit-learn<Br>
        <input type="checkbox" name="mycheck" value="tensorflow"  > tensorflow<Br>
        <input type="checkbox" name="mycheck" value="transformers"> transformers<Br><Br>
+        </div>
+
+    <div class="right_block">
     <button type="submit">Get salary</button><Br>
-    <h2>Salary is {{ salary }}</h2>
+    </div>
 
     </form></b>
+    </div>
+
 
 </body>
 </html>
